@@ -24,22 +24,33 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero" style={{ padding: '5rem 1.75rem 3rem', textAlign: 'center', maxWidth: '860px', margin: '0 auto' }}>
-        <div style={{ display: 'inline-block', background: '#fff', border: '0.5px solid #e5e5e5', borderRadius: '20px', padding: '0.4rem 1rem', fontSize: '0.8rem', color: '#F97316', marginBottom: '2rem', fontWeight: 700 }}>
-          Professionell · Persönlich · Festpreis
-        </div>
-        <h1 style={{ fontSize: '3.5rem', fontWeight: 700, lineHeight: 1.1, marginBottom: '1.5rem', color: '#1a1a1a' }}>
-          <span style={{ color: '#F97316' }}>0</span> Risiko.{' '}
-          <span style={{ color: '#F97316' }}>0</span> Fehler.{' '}
-          <span style={{ color: '#F97316' }}>0</span> Stress.
-        </h1>
-        <p style={{ fontSize: '1.2rem', color: '#666', lineHeight: 1.7, marginBottom: '2.5rem' }}>
-          Ihre Lohnabrechnung. <span style={{ color: '#F97316', fontWeight: 700 }}>100%</span> in sicheren Händen.
-          Rechtssicher, pünktlich und zum transparenten Festpreis.
-        </p>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="#kontakt" style={{ background: '#1a1a1a', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem' }}>Kostenloses Angebot</a>
-          <a href="#leistungen" style={{ background: '#fff', color: '#1a1a1a', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem', border: '0.5px solid #ddd' }}>Leistungen ansehen</a>
-        </div>
+        <div style={{ display: 'inline-block', background: '#fff', border: '0.5px solid #e5e5e5', borderRadius: '20px', padding: '0.4rem 1rem', fontSize: '0.85rem', color: '#F97316', marginBottom: '2rem', fontWeight: 700 }}>
+  Ihr digitales Lohnbüro – bundesweit
+</div>
+<h1 style={{ fontSize: '3.5rem', fontWeight: 700, lineHeight: 1.1, marginBottom: '1rem', color: '#1a1a1a' }}>
+  <span style={{ color: '#F97316' }}>0</span> Risiko.{' '}
+  <span style={{ color: '#F97316' }}>0</span> Fehler.{' '}
+  <span style={{ color: '#F97316' }}>0</span> Stress.
+</h1>
+<p style={{ fontSize: '1.2rem', color: '#666', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+  Ihre Lohnabrechnung. <span style={{ color: '#F97316', fontWeight: 700 }}>100%</span> in sicheren Händen.
+</p>
+<ul style={{ listStyle: 'none', display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '2rem', textAlign: 'left' }}>
+  {[
+    'Persönlicher Ansprechpartner',
+    'Bundesweit für alle Branchen',
+    'Digital, pünktlich & rechtssicher',
+    'Festpreis – transparent & fair',
+  ].map(punkt => (
+    <li key={punkt} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', color: '#444' }}>
+      <span style={{ color: '#F97316', fontWeight: 700, fontSize: '1.1rem' }}>✓</span> {punkt}
+    </li>
+  ))}
+</ul>
+<div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+  <a href="#kontakt" style={{ background: '#1a1a1a', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem' }}>Kostenloses Angebot</a>
+  <a href="#leistungen" style={{ background: '#fff', color: '#1a1a1a', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem', border: '0.5px solid #ddd' }}>Leistungen ansehen</a>
+</div>
       </section>
 
       {/* Kennzahlen */}
