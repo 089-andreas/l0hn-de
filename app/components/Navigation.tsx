@@ -44,10 +44,10 @@ export default function Navigation() {
         @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
         .nav-wrapper { font-family: 'Atkinson Hyperlegible', sans-serif; }
         .nav-item { position: relative; }
-        .nav-btn { color: #444; text-decoration: none; font-size: 1.7rem; font-weight: 400; padding: 0.5rem 0; cursor: pointer; display: flex; align-items: center; gap: 4px; background: none; border: none; font-family: inherit; }
-        .nav-btn::after { content: ' ▾'; font-size: 1.4rem; color: #999; }
+        .nav-btn { color: #444; text-decoration: none; font-size: 1.3rem; font-weight: 600; padding: 0.5rem 0; cursor: pointer; display: flex; align-items: center; gap: 4px; background: none; border: none; font-family: inherit; }
+.dropdown { position: absolute; top: 100%; left: 0; background: #fff; border: 0.5px solid #e5e5e5; border-radius: 12px; padding: 0.5rem 0.75rem; border-radius: 8px; min-width: 220px; z-index: 100; margin-top: 0; padding-top: 12px; }
         .nav-btn:hover { color: #1a1a1a; }
-        .dropdown { position: absolute; top: calc(100% + 8px); left: 0; background: #fff; border: 0.5px solid #e5e5e5; border-radius: 10px; padding: 0.5rem; min-width: 240px; z-index: 200; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .dropdown { position: absolute; top: calc(100% + 0px); left: 0; background: #fff; border: 0.5px solid #e5e5e5; border-radius: 10px; padding: 0.5rem; min-width: 240px; z-index: 200; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
         .dropdown a { display: block; color: #444; text-decoration: none; padding: 0.5rem 0.75rem; border-radius: 6px; font-size: 0.95rem; }
         .dropdown a:hover { background: #f5f5f5; color: #F97316; }
         .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
