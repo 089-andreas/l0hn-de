@@ -1,5 +1,8 @@
 import Navigation from '../components/Navigation';
+import PreisVergleich from '../components/PreisVergleich';
+import KontaktSection from '../components/KontaktSection';
 import Footer from '../components/Footer';
+
 export default function Controlling() {
   return (
     <main style={{ fontFamily: "'Atkinson Hyperlegible', sans-serif", background: '#f5f5f5', minHeight: '100vh', color: '#1a1a1a' }}>
@@ -13,10 +16,7 @@ export default function Controlling() {
           .section { padding: 2.5rem 1.25rem !important; }
         }
       `}</style>
-
       <Navigation />
-
-      {/* Hero */}
       <section style={{ padding: '5rem 1.75rem 3rem', textAlign: 'center', maxWidth: '860px', margin: '0 auto' }}>
         <div style={{ display: 'inline-block', background: '#fff', border: '0.5px solid #e5e5e5', borderRadius: '20px', padding: '0.4rem 1rem', fontSize: '0.85rem', color: '#F97316', marginBottom: '2rem', fontWeight: 700 }}>Leistung</div>
         <h1 style={{ fontSize: '3rem', fontWeight: 700, lineHeight: 1.1, marginBottom: '1rem', color: '#1a1a1a' }}>
@@ -27,17 +27,13 @@ export default function Controlling() {
         </p>
         <a href="#kontakt" style={{ background: '#1a1a1a', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem' }}>Jetzt Angebot anfragen</a>
       </section>
-
-      {/* Was ist das? */}
       <section className="section" style={{ padding: '3rem 1.75rem', maxWidth: '860px', margin: '0 auto' }}>
         <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Übersicht</div>
         <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '1rem', color: '#1a1a1a' }}>Was ist Lohn-Controlling?</h2>
         <p style={{ fontSize: '1rem', color: '#555', lineHeight: 1.8 }}>
-          Lohn-Controlling geht über die reine Abrechnung hinaus. Es liefert Ihnen strukturierte Auswertungen über Personalkosten, Kostenstellenverteilungen, Mehrjahresvergleiche und individuelle Kennzahlen. So behalten Sie den Überblick über Ihren größten Kostenfaktor – das Personal – und können gezielt steuern und planen.
+          Lohn-Controlling geht über die reine Abrechnung hinaus. Es liefert strukturierte Auswertungen über Personalkosten, Kostenstellenverteilungen, Mehrjahresvergleiche und individuelle Kennzahlen. So behalten Sie den Überblick über Ihren größten Kostenfaktor – das Personal – und können gezielt steuern und planen.
         </p>
       </section>
-
-      {/* Leistungsumfang */}
       <section style={{ background: '#fff', padding: '3rem 1.75rem', margin: '2rem 0' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Leistungsumfang</div>
@@ -59,14 +55,12 @@ export default function Controlling() {
           </div>
         </div>
       </section>
-
-      {/* Für wen */}
       <section className="section" style={{ padding: '3rem 1.75rem', maxWidth: '1100px', margin: '0 auto' }}>
         <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Für wen</div>
         <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '1.5rem', color: '#1a1a1a' }}>Für wen ist Controlling sinnvoll?</h2>
         <div className="grid2" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
           {[
-            { titel: 'Wachsende Unternehmen', text: 'Ab ca. 10 Mitarbeitenden lohnen sich strukturierte Auswertungen – für bessere Planung.' },
+            { titel: 'Wachsende Unternehmen', text: 'Ab ca. 10 Mitarbeitern lohnen sich strukturierte Auswertungen – für bessere Planung.' },
             { titel: 'Mehrere Standorte', text: 'Personalkosten je Standort im Blick behalten – Controlling macht den Unterschied.' },
             { titel: 'Projektbasierte Betriebe', text: 'Kosten je Projekt oder Auftrag zuordnen – ideal für Dienstleister und Agenturen.' },
             { titel: 'Geschäftsführung & CFO', text: 'Schnelle, verlässliche Kennzahlen für fundierte Entscheidungen auf Führungsebene.' },
@@ -78,8 +72,6 @@ export default function Controlling() {
           ))}
         </div>
       </section>
-
-      {/* Vorteile */}
       <section style={{ background: '#fff', padding: '3rem 1.75rem', margin: '2rem 0' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Warum L0hn.de</div>
@@ -104,24 +96,9 @@ export default function Controlling() {
           </div>
         </div>
       </section>
-
-      {/* Kontakt */}
-      <section id="kontakt" className="section" style={{ padding: '3rem 1.75rem', maxWidth: '700px', margin: '0 auto' }}>
-        <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Kontakt</div>
-        <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem', color: '#1a1a1a' }}>Jetzt Angebot anfragen</h2>
-        <p style={{ color: '#666', marginBottom: '2rem' }}>Kostenloses Erstgespräch – unverbindlich und unkompliziert.</p>
-        <div className="grid2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-          <input type="text" placeholder="Ihr Name *" style={{ padding: '0.85rem 1rem', borderRadius: '8px', border: '0.5px solid #ddd', background: '#fff', color: '#1a1a1a', fontSize: '0.95rem', fontFamily: 'inherit' }} />
-          <input type="email" placeholder="Ihre E-Mail *" style={{ padding: '0.85rem 1rem', borderRadius: '8px', border: '0.5px solid #ddd', background: '#fff', color: '#1a1a1a', fontSize: '0.95rem', fontFamily: 'inherit' }} />
-          <input type="text" placeholder="Unternehmen" style={{ padding: '0.85rem 1rem', borderRadius: '8px', border: '0.5px solid #ddd', background: '#fff', color: '#1a1a1a', fontSize: '0.95rem', fontFamily: 'inherit' }} />
-          <input type="text" placeholder="Mitarbeiterzahl" style={{ padding: '0.85rem 1rem', borderRadius: '8px', border: '0.5px solid #ddd', background: '#fff', color: '#1a1a1a', fontSize: '0.95rem', fontFamily: 'inherit' }} />
-          <textarea placeholder="Ihre Nachricht" rows={4} style={{ gridColumn: '1/-1', padding: '0.85rem 1rem', borderRadius: '8px', border: '0.5px solid #ddd', background: '#fff', color: '#1a1a1a', fontSize: '0.95rem', resize: 'none', fontFamily: 'inherit' }} />
-          <button style={{ gridColumn: '1/-1', background: '#1a1a1a', color: '#fff', padding: '1rem', borderRadius: '8px', border: 'none', fontWeight: 700, fontSize: '1rem', cursor: 'pointer', fontFamily: 'inherit' }}>Nachricht senden</button>
-        </div>
-      </section>
-
-        <Footer />
-
+      <PreisVergleich />
+      <KontaktSection />
+      <Footer />
     </main>
   );
 }

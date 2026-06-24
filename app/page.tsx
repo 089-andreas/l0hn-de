@@ -39,7 +39,7 @@ export default function Home() {
         <ul style={{ listStyle: 'none', display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '2rem', textAlign: 'left' }}>
           {[
             'Persönlicher Ansprechpartner',
-            'Von 1 bis 10.000 Mitarbeitende',
+            'Von 1 bis 1.000 Mitarbeitende',
             'Digital, pünktlich & rechtssicher',
             'Festpreis – transparent & fair',
           ].map(punkt => (
@@ -94,33 +94,69 @@ export default function Home() {
           <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Preise</div>
           <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '1.5rem', color: '#1a1a1a' }}>Transparent & fair</h2>
           <div className="preise-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', alignItems: 'stretch' }}>
+
+            {/* Digital */}
             <div style={{ background: '#f5f5f5', border: '0.5px solid #e5e5e5', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column' }}>
               <div style={{ fontSize: '0.8rem', color: '#888', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>Digital</div>
               <div style={{ fontSize: '3rem', fontWeight: 700, color: '#1a1a1a', marginBottom: '0.25rem' }}>ab 7€</div>
               <div style={{ fontSize: '0.9rem', color: '#888', marginBottom: '1.5rem' }}>pro Abrechnung · zzgl. MwSt.</div>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', flex: 1 }}>
-                {['Monatliche Lohn-/Gehaltsabrechnung', 'Alle SV-Meldungen & Lohnsteueranmeldung', 'An- & Abmeldungen der Mitarbeiter', 'Online-Portal für Mitarbeitende', 'Fester Ansprechpartner', 'DSGVO-konform', 'Zusatzleistungen auf Anfrage'].map(f => (
+                {[
+                  'Monatliche Lohn-/Gehaltsabrechnung',
+                  'Alle SV-Meldungen & Lohnsteueranmeldung',
+                  'An- & Abmeldungen der Mitarbeiter',
+                  'Online-Portal für Mitarbeitende',
+                  'Fester Ansprechpartner',
+                  'DSGVO-konform',
+                ].map(f => (
                   <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.9rem', color: '#444' }}>
                     <span style={{ color: '#F97316', fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
+                {[
+                  'Bescheinigungen',
+                  'Korrekturen',
+                  'Jahresendarbeiten',
+                  'Behördenkorrespondenz',
+                ].map(f => (
+                  <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.9rem', color: '#aaa' }}>
+                    <span style={{ color: '#aaa', fontWeight: 700, flexShrink: 0 }}>+</span> {f} <span style={{ fontSize: '0.8rem' }}>(gegen Aufpreis)</span>
+                  </li>
+                ))}
               </ul>
-              <a href="#kontakt" style={{ display: 'block', marginTop: '1.5rem', background: 'transparent', color: '#1a1a1a', border: '1px solid #1a1a1a', padding: '0.85rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, textAlign: 'center' }}>Jetzt anfragen</a>
+              <div style={{ background: '#fff', borderRadius: '8px', padding: '0.75rem 1rem', fontSize: '0.8rem', color: '#888', marginTop: '1.25rem', lineHeight: 1.5, border: '0.5px solid #e5e5e5' }}>
+                Bescheinigungen, Korrekturen & Sonderleistungen werden separat berechnet.
+              </div>
+              <a href="/preise" style={{ display: 'block', marginTop: '1rem', background: 'transparent', color: '#1a1a1a', border: '1px solid #1a1a1a', padding: '0.85rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, textAlign: 'center' }}>Jetzt anfragen</a>
             </div>
+
+            {/* Vollservice */}
             <div style={{ background: '#f5f5f5', border: '2px solid #1a1a1a', borderRadius: '16px', padding: '2rem', position: 'relative', display: 'flex', flexDirection: 'column' }}>
               <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#F97316', color: '#fff', padding: '0.25rem 1rem', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 700, whiteSpace: 'nowrap' }}>Beliebteste Wahl</div>
               <div style={{ fontSize: '0.8rem', color: '#888', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>Vollservice</div>
-              <div style={{ fontSize: '3rem', fontWeight: 700, color: '#1a1a1a', marginBottom: '0.25rem' }}>ab 17€</div>
+              <div style={{ fontSize: '3rem', fontWeight: 700, color: '#1a1a1a', marginBottom: '0.25rem' }}>17€</div>
               <div style={{ fontSize: '0.9rem', color: '#888', marginBottom: '1.5rem' }}>pro Abrechnung · zzgl. MwSt.</div>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', flex: 1 }}>
-                {['Alles aus Digital', 'Alle Bescheinigungen inklusive', 'Postversand inklusive', 'Jahresendarbeiten inklusive', 'Behördenkorrespondenz inklusive', 'Controlling & Auswertungen', 'Digitale Personalakte'].map(f => (
+                {[
+                  'Alles aus Digital',
+                  'Alle Bescheinigungen inklusive',
+                  'Postversand inklusive',
+                  'Jahresendarbeiten inklusive',
+                  'Behördenkorrespondenz inklusive',
+                  'Controlling & Auswertungen',
+                  'Digitale Personalakte',
+                ].map(f => (
                   <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.9rem', color: '#444' }}>
                     <span style={{ color: '#F97316', fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
-              <a href="#kontakt" style={{ display: 'block', marginTop: '1.5rem', background: '#1a1a1a', color: '#fff', padding: '0.85rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, textAlign: 'center' }}>Jetzt anfragen</a>
+              <div style={{ background: '#FFF7ED', borderRadius: '8px', padding: '0.75rem 1rem', fontSize: '0.8rem', color: '#F97316', marginTop: '1.25rem', lineHeight: 1.5, fontWeight: 700 }}>
+                Alle Leistungen inklusive – keine Zusatzkosten, egal was anfällt.
+              </div>
+              <a href="/preise" style={{ display: 'block', marginTop: '1rem', background: '#1a1a1a', color: '#fff', padding: '0.85rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, textAlign: 'center' }}>Jetzt anfragen</a>
             </div>
+
           </div>
         </div>
       </section>

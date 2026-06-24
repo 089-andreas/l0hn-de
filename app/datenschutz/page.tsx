@@ -1,4 +1,5 @@
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export default function Datenschutz() {
   return (
@@ -14,11 +15,10 @@ export default function Datenschutz() {
         <h1 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '2.5rem', color: '#1a1a1a' }}>Datenschutzerklärung</h1>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-
           {[
             {
               titel: '1. Verantwortlicher',
-              text: `Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHevelio Personal GmbH\nJahnplatz 4, 82166 Gräfelfing\nTelefon: 089 – 21 52 54 56 0\nE-Mail: info@hevelio-personal.de\nGeschäftsführer: Andreas Thierauf`
+              text: `Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHevelio Personal GmbH\nJahnplatz 4, 82166 Gräfelfing\nTelefon: 089 – 21 52 54 56 0\nMobil: 0151 51 73 32 33\nE-Mail: info@hevelio-personal.de\nE-Mail: a.thierauf@hevelio.de\nGeschäftsführer: Andreas Thierauf, Dipl. Betriebswirt (FH)`
             },
             {
               titel: '2. Erhebung und Speicherung personenbezogener Daten',
@@ -46,7 +46,7 @@ export default function Datenschutz() {
             },
             {
               titel: '8. Aktualität und Änderung dieser Datenschutzerklärung',
-              text: 'Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juni 2025. Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.'
+              text: 'Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juni 2026. Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.'
             },
           ].map((abschnitt) => (
             <div key={abschnitt.titel} style={{ background: '#fff', borderRadius: '16px', padding: '2rem', border: '0.5px solid #e5e5e5' }}>
@@ -58,18 +58,10 @@ export default function Datenschutz() {
               </p>
             </div>
           ))}
-
         </div>
       </section>
 
-      <footer style={{ borderTop: '0.5px solid #e5e5e5', padding: '1.5rem 1.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem', maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1a1a1a' }}>L<span style={{ color: '#F97316' }}>0</span>hn.de</div>
-        <p style={{ fontSize: '0.8rem', color: '#888' }}>© 2025 L0hn.de · Alle Rechte vorbehalten</p>
-        <div style={{ display: 'flex', gap: '1rem', fontSize: '0.8rem' }}>
-          <a href="/impressum" style={{ color: '#888', textDecoration: 'none' }}>Impressum</a>
-          <a href="/datenschutz" style={{ color: '#888', textDecoration: 'none' }}>Datenschutz</a>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

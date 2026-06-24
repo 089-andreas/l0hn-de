@@ -1,4 +1,5 @@
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export default function Impressum() {
   return (
@@ -11,10 +12,17 @@ export default function Impressum() {
       <Navigation />
 
       <section style={{ maxWidth: '800px', margin: '0 auto', padding: '4rem 1.75rem' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '2.5rem', color: '#1a1a1a' }}>Impressum</h1>
-<p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-  <strong>L0hn.de</strong> ist eine Marke der <strong>Hevelio Personal GmbH</strong>.
-</p>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '1.5rem', color: '#1a1a1a' }}>Impressum</h1>
+
+        <div style={{ background: '#FFF7ED', border: '1px solid #FED7AA', borderRadius: '10px', padding: '0.85rem 1.25rem', marginBottom: '1rem', fontSize: '0.95rem', color: '#1a1a1a' }}>
+          <strong>L0hn.de</strong> ist eine Marke der <strong>Hevelio Personal GmbH</strong>.
+        </div>
+
+        <div style={{ background: '#F0F9FF', border: '1px solid #BAE6FD', borderRadius: '10px', padding: '0.85rem 1.25rem', marginBottom: '2.5rem', fontSize: '0.9rem', color: '#444', lineHeight: 1.7 }}>
+          <strong>Hinweis:</strong> Die von uns angebotenen Dienstleistungen beziehen sich ausschließlich auf den Rahmen des{' '}
+          <a href="https://www.gesetze-im-internet.de/stberg/__6.html" target="_blank" rel="noopener noreferrer" style={{ color: '#F97316', textDecoration: 'none', fontWeight: 700 }}>§ 6 Abs. 4 StBerG</a>.
+        </div>
+
         <div style={{ background: '#fff', borderRadius: '16px', padding: '2.5rem', border: '0.5px solid #e5e5e5', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div>
@@ -37,14 +45,15 @@ export default function Impressum() {
           <div>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Kontakt</div>
             <p style={{ lineHeight: 1.8, color: '#444' }}>
-              Telefon: 089 – 21 52 54 56 0<br />
-              E-Mail: <a href="mailto:info@hevelio-personal.de" style={{ color: '#F97316', textDecoration: 'none' }}>info@hevelio-personal.de</a>
+                            Mobil: 0151 51 733 233<br />
+              
+              E-Mail: <a href="mailto:a.thierauf@hevelio.de" style={{ color: '#F97316', textDecoration: 'none' }}>a.thierauf@hevelio.de</a>
             </p>
           </div>
 
           <div>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Vertretungsberechtigter Geschäftsführer</div>
-            <p style={{ lineHeight: 1.8, color: '#444' }}>Andreas Thierauf</p>
+            <p style={{ lineHeight: 1.8, color: '#444' }}>Andreas Thierauf, Dipl. Betriebswirt (FH)</p>
           </div>
 
           <div>
@@ -58,6 +67,15 @@ export default function Impressum() {
           <div>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Umsatzsteuer-Identifikationsnummer</div>
             <p style={{ lineHeight: 1.8, color: '#444' }}>DE 355 993 064</p>
+          </div>
+
+          <div>
+            <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Betriebshaftpflichtversicherung</div>
+            <p style={{ lineHeight: 1.8, color: '#444' }}>
+              Allianz Deutschland AG<br />
+              Königinstraße 28<br />
+              80802 München
+            </p>
           </div>
 
           <div>
@@ -85,14 +103,7 @@ export default function Impressum() {
         </div>
       </section>
 
-      <footer style={{ borderTop: '0.5px solid #e5e5e5', padding: '1.5rem 1.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem', maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#1a1a1a' }}>L<span style={{ color: '#F97316' }}>0</span>hn.de</div>
-        <p style={{ fontSize: '0.8rem', color: '#888' }}>© 2025 L0hn.de · Alle Rechte vorbehalten</p>
-        <div style={{ display: 'flex', gap: '1rem', fontSize: '0.8rem' }}>
-          <a href="/impressum" style={{ color: '#888', textDecoration: 'none' }}>Impressum</a>
-          <a href="/datenschutz" style={{ color: '#888', textDecoration: 'none' }}>Datenschutz</a>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

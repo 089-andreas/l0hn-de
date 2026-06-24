@@ -17,24 +17,14 @@ export default function Navigation() {
       { label: 'Controlling', href: '/controlling' },
       { label: 'Digitale Personalakte', href: '/personalakte' },
     ],
-    info: [
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Blog', href: '/blog' },
-      { label: 'Brutto-Netto-Rechner', href: '/brutto-netto-rechner' },
-      { label: 'Lexikon', href: '/lexikon' },
-      { label: 'Ressourcen', href: '/ressourcen' },
-    ],
+   info: [
+  { label: 'Ablauf', href: '/ablauf' },
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Preise', href: '/preise' },
+],
     standorte: [
       { label: 'München', href: '/lohnabrechnung-muenchen' },
-      { label: 'Berlin', href: '/lohnabrechnung-berlin' },
-      { label: 'Hamburg', href: '/lohnabrechnung-hamburg' },
-      { label: 'Frankfurt', href: '/lohnabrechnung-frankfurt' },
-      { label: 'Köln', href: '/lohnabrechnung-koeln' },
-      { label: 'Stuttgart', href: '/lohnabrechnung-stuttgart' },
-      { label: 'Düsseldorf', href: '/lohnabrechnung-duesseldorf' },
-      { label: 'Leipzig', href: '/lohnabrechnung-leipzig' },
-      { label: 'Dresden', href: '/lohnabrechnung-dresden' },
-      { label: 'Nürnberg', href: '/lohnabrechnung-nuernberg' },
+  
     ],
   };
 
