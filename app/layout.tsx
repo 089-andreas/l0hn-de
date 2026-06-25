@@ -14,8 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'L0hn.de – Ihre Lohnabrechnung in sicheren Händen',
-description: 'Professionelle Lohnabrechnung für Unternehmen – digital, pünktlich & rechtssicher. Ab 7€ pro Mitarbeiter monatlich.',
+  description: 'Professionelle Lohnabrechnung für Unternehmen – digital, pünktlich & rechtssicher. Ab 7€ pro Mitarbeiter monatlich.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
+
 
 export default function RootLayout({
   children,
