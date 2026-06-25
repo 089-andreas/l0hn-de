@@ -45,7 +45,7 @@ export default function Impressum() {
           <div>
             <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: '#F97316', marginBottom: '0.5rem' }}>Kontakt</div>
             <p style={{ lineHeight: 1.8, color: '#444' }}>
-                            Mobil: 0151 51 733 233<br />
+                            Telefon: 089 44 31 11 82 0<br />
               
               E-Mail: <a href="mailto:a.thierauf@hevelio.de" style={{ color: '#F97316', textDecoration: 'none' }}>a.thierauf@hevelio.de</a>
             </p>

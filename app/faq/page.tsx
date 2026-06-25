@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     frage: 'Wie schnell können wir starten?',
-    antwort: 'In der Regel innerhalb von 1–2 Wochen. Nach dem Erstgespräch und der Datenübergabe können wir bereits im nächsten Abrechnungsmonat starten.'
+    antwort: 'In der Regel innerhalb von 1 Monat. Nach dem Erstgespräch und der Datenübergabe können wir bereits im nächsten Abrechnungsmonat starten.'
   },
   {
     frage: 'Welche Branchen betreuen Sie?',

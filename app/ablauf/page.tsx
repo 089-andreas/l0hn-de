@@ -58,6 +58,12 @@ const auswahlkriterien = [
   },
 ];
 
+const PhoneIcon = ({ color }: { color: string }) => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill={color} xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+  </svg>
+);
+
 export default function Ablauf() {
   return (
     <main style={{ fontFamily: "'Atkinson Hyperlegible', sans-serif", background: '#f5f5f5', minHeight: '100vh', color: '#1a1a1a' }}>
@@ -81,18 +87,21 @@ export default function Ablauf() {
           In 4 Schritten zu Ihrer <span style={{ color: '#F97316' }}>Lohnabrechnung</span>
         </h1>
         <p style={{ fontSize: '1.15rem', color: '#666', lineHeight: 1.7, marginBottom: '2rem' }}>
-          Von der ersten Anfrage bis zur laufenden Abrechnung – einfach, digital und ohne Aufwand für Sie. Die meisten Kunden sind innerhalb einer Woche startklar.
+          Von der ersten Anfrage bis zur laufenden Abrechnung – einfach, digital und ohne Aufwand für Sie. Die meisten Kunden sind innerhalb eines Monats startklar.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="#kontakt" style={{ background: '#1a1a1a', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem' }}>Jetzt starten</a>
-          <a href="tel:08921525456" style={{ background: '#fff', color: '#1a1a1a', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem', border: '0.5px solid #ddd' }}>📞 089 – 21 52 54 56 0</a>
+          <a href="tel:08944311820" style={{ background: '#fff', color: '#1a1a1a', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '1rem', border: '0.5px solid #ddd', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <PhoneIcon color="#F97316" />
+            089 – 44 31 11 82 0
+          </a>
         </div>
       </section>
 
       {/* Kennzahlen */}
       <section style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1px', background: '#e5e5e5', margin: '0 1.75rem 3rem', borderRadius: '12px', overflow: 'hidden' }}>
         {[
-          { zahl: '< 1 Woche', label: 'Bis zum ersten Start' },
+          { zahl: '< 1 Monat', label: 'Bis zum ersten Start' },
           { zahl: '24h', label: 'Angebot in 24 Stunden' },
           { zahl: '100%', label: 'Digital & papierlos' },
         ].map((item) => (
@@ -238,7 +247,10 @@ export default function Ablauf() {
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="#kontakt" style={{ background: '#F97316', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700 }}>Kostenloses Angebot anfragen</a>
-          <a href="tel:08921525456" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, border: '1px solid rgba(255,255,255,0.2)' }}>📞 089 – 21 52 54 56 0</a>
+          <a href="tel:08944311820" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', padding: '0.9rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, border: '1px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <PhoneIcon color="#fff" />
+            089 – 44 31 11 82 0
+          </a>
         </div>
       </section>
 
