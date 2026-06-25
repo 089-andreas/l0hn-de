@@ -18,7 +18,7 @@ export default function Datenschutz() {
           {[
             {
               titel: '1. Verantwortlicher',
-              text: `Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHevelio Personal GmbH\nJahnplatz 4, 82166 Gräfelfing\nTelefon: 089 – 44 31 11 82 0\nE-Mail: a.thierauf@hevelio.de\nGeschäftsführer: Andreas Thierauf, Dipl. Betriebswirt (FH)`
+              text: `Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\n\nHevelio Personal GmbH\nJahnplatz 4, 82166 Gräfelfing\nTelefon: 089 – 44 31 11 82 0\nE-Mail: info@l0hn.de\nGeschäftsführer: Andreas Thierauf, Dipl. Betriebswirt (FH)`
             },
             {
               titel: '2. Erhebung und Speicherung personenbezogener Daten',

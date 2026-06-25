@@ -47,7 +47,7 @@ export default function Impressum() {
             <p style={{ lineHeight: 1.8, color: '#444' }}>
                             Telefon: 089 44 31 11 82 0<br />
               
-              E-Mail: <a href="mailto:a.thierauf@hevelio.de" style={{ color: '#F97316', textDecoration: 'none' }}>a.thierauf@hevelio.de</a>
+              E-Mail: <a href="mailto:info@l0hn.de" style={{ color: '#F97316', textDecoration: 'none' }}>info@l0hn.de</a>
             </p>
           </div>
 
