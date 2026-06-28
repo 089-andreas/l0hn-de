@@ -6,7 +6,10 @@ export default function Footer() {
       <div style={{ display: 'flex', gap: '1rem', fontSize: '0.8rem' }}>
         <a href="/impressum" style={{ color: '#888', textDecoration: 'none' }}>Impressum</a>
         <a href="/datenschutz" style={{ color: '#888', textDecoration: 'none' }}>Datenschutz</a>
+        <a href="/agb" style={{ color: '#888', textDecoration: 'none' }}>AGB</a>
       </div>
     </footer>
   );
 }
+
+
